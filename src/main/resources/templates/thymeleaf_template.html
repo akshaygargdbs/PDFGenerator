@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: left; ">
+        <span th:text="'KIMLY CONSTRUCTION PTE LTD'"></span>
+    </h3>
+    <h4 style="text-align: centre; ">
+        <span th:text="'Payment Response'"></span>
+    </h4>
+    <table style="border: 1px solid black;">
+        <tr>
+            <td><span style=" background: yellow" th:text="'Payment Response Reference Number : ' + ${refNumber}"></span></td>
+            <td><span style=" background: blue" th:text="'Payment Response Date : ' + ${repDate}"></span></td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table style="border: 1px solid black;">
+        <tr><td><span th:text="'To : ' + ${recieverEmail}"></span></td></tr>
+        <tr>
+            <td>
+                <span th:text="'Service Address : ' + ${serviceAdd}"></span>
+            </td>
+            <td>
+                <table>
+                    <tr><td><span th:text="'Tel : ' + ${tel}"></span></td></tr>
+                    <tr><td><span th:text="'Fax : ' + ${fax}"></span></td></tr>
+                    <tr><td><span th:text="'Email : ' + ${email}"></span></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr><td><span th:text="'Person-in-charge (Claimant) : ' + ${inCharge}"></span></td></tr>
+
+    </table>
+</div>
+
+<div>
+
+    <table style="border: 1px solid black;">
+        <tr><td><span th:text="'From : ' + ${sender}"></span></td></tr>
+        <tr>
+            <td>
+                <span th:text="'Service Address : ' + ${serviceAddSender}"></span>
+            </td>
+            <td>
+                <table>
+                    <tr><td><span th:text="'Tel : ' + ${telSender}"></span></td></tr>
+                    <tr><td><span th:text="'Fax : ' + ${faxSender}"></span></td></tr>
+                    <tr><td><span th:text="'Email : ' + ${emailSender}"></span></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr><td><span th:text="'Person-in-charge (Respondent) : ' + ${inChargeSender}"></span></td></tr>
+
+    </table>
+</div>
+
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Particulars of Contract'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'Project Title'"></span>
+            </td>
+            <td>
+                <span th:text="${projectTitle}"></span>
+            </td>
+        </tr>
+        <tr><td><span th:text="'Contract Identification : ' + ${contractIdentificaiton}"></span></td>
+        <td>
+            <table>
+                <tr><td><span th:text="'Reference Period of Claim : ' + ${refClaim}"></span></td></tr>
+                <tr><td><span style=" background: blue" th:text="'From : ' + ${frm}"></span></td></tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+
+    <table style="border: 1px solid black;">
+        <tr><td><span th:text="'Project Claim Identification :'"></span></td><td><span style=" background: blue" th:text="${clmIdentify}"></span></td><td></td></tr>
+        <tr><td><span th:text="'Project Claim Reference Number :'"></span></td><td><span style=" background: blue" th:text="${clmIdentifyNum}"></span></td><td></td></tr>
+        <tr><td><span th:text="'Project Claim Date :'"></span></td><td><span style=" background: blue" th:text="${clmIdentifyDate}"></span></td><td></td></tr>
+        <tr><td><span th:text="'Project Claim Amount :'"></span></td><td><span style=" background: blue" th:text="${clmIdentifyAmount}"></span></td><td></td></tr>
+    </table>
+
+</div>
+
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Payment Response Details'"></span></caption>
+        <tr>
+            <td><span th:text="'Description of Item / Variation Reference No.'"></span></td>
+            <td><span th:text="'Amount Claimed for Item (S$)'"></span></td>
+            <td><span th:text="'Response Amount for Item (S$)'"></span></td>
+            <td><span th:text="'Reason for Difference'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'A. Sub-Contract Works B. Variation Order'"></span></td>
+            <td><span style=" background: yellow" th:text="''"></span></td>
+            <td><span style=" background: yellow" th:text="''"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'Sub-Total for Response Amount'"></span></td>
+            <td><span style=" background: yellow" th:text="''"></span></td>
+            <td><span style=" background: yellow" th:text="''"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'*Description of item for Amount Withheld, if any'"></span></td>
+            <td><span th:text="'Amount Withheld (S$)'"></span></td>
+            <td><span th:text="'Reason for Withholding'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'Retention: 10% capped at 5% of Sub-Contract Sum'"></span></td>
+            <td><span style=" background: yellow" th:text="'$             -'"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'Sub-Total for Amount Withheld, if any'"></span></td>
+            <td><span style=" background: yellow" th:text="'$             -'"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'Less : Amount Previously Paid, if any'"></span></td>
+            <td><span style=" background: yellow" th:text="'$             -'"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'Total Response Amount [Excl GST]'"></span></td>
+            <td><span style=" background: yellow" th:text="'$             -'"></span></td>
+            <td><span th:text="''"></span></td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h5>
+        <span th:text="'Name of Respondent / Authorised Representative : Authorised Signature & ' "></span>
+    </h5>
+    <h5 >
+        <span th:text="'Organization Stamp (if applicable) :'"></span>
+    </h5>
+    <h5 >
+        <span th:text="'Date : '"></span>
+    </h5>
+
+</div>
+
+</body>
+</html>
