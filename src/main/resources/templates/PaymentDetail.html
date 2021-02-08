@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: left; ">
+        <span th:text="'KIMLY CONSTRUCTION PTE LTD.'"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'PROJECT NAME' + ${projectName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR' + ${subConName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR Works' + ${subConWork}"></span>
+    </h3>
+</div>
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Payment Response Detail BreakDown'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'S/N'"></span>
+            </td>
+            <td>
+                <span th:text="'Description'"></span>
+            </td>
+            <td colspan="4">
+                <span th:text="'Contract'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'SUB-CON CLAIMED'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'KINLY CERTIFIED'"></span>
+            </td>
+            <td>
+                <span th:text="'Remarks'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+            <td>
+                <span th:text="'% Work Done'"></span>
+            </td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+            <td>
+                <span th:text="'% Work Done'"></span>
+            </td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'SUB-CONTARCT WORKS'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'A'"></span></td>
+            <td><span th:text="'Preliminaries'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Mobilisation and demobilisation of materials, labour, plant and equipment'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Installation by Crush Piler; Extraction by Silent Piler'"></span></td>
+            <td></td>
+            <td><span th:text="'SUM'"></span></td>
+            <td></td>
+            <td><span th:text="'$ 50,000.00'"></span></td>
+            <td><span th:text="'80%'"></span></td>
+            <td></td>
+            <td><span th:text="'SUM'"></span></td>
+            <td></td>
+            <td><span th:text="'$ 40,000.00'"></span></td>
+            <td><span th:text="'70%'"></span></td>
+            <td></td>
+            <td><span th:text="'SUM'"></span></td>
+            <td></td>
+            <td><span th:text="'$ 35,000.00'"></span></td>
+            <td><span th:text="'Difference in work done'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'B'"></span></td>
+            <td><span th:text="'Installation of Sheet Piles Along Perimeter Wall'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Rental, supply, delivery and installation of sheet piles (FSP IV) including subsequent extraction using the following methods :'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'a'"></span></td>
+            <td><span th:text="'Installation by Crush Piler; Extraction by Silent Piler'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Section A & B - 18m length '"></span></td>
+            <td><span th:text="'204'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'$ 408,000.00'"></span></td>
+            <td><span th:text="'100%'"></span></td>
+            <td><span th:text="'221'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'$ 442,000.00'"></span></td>
+            <td><span th:text="'96%'"></span></td>
+            <td><span th:text="'221'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'$ 424,320.00'"></span></td>
+            <td><span th:text="'Difference in Work done'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'2'"></span></td>
+            <td><span th:text="'Section c & D/D 1- 15m length '"></span></td>
+            <td><span th:text="'150'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 225,000.00'"></span></td>
+            <td><span th:text="'100%'"></span></td>
+            <td><span th:text="'280'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 420,000.00'"></span></td>
+            <td><span th:text="'95%'"></span></td>
+            <td><span th:text="'280'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 399,000.00'"></span></td>
+            <td><span th:text="'Difference in Work done'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'3'"></span></td>
+            <td><span th:text="'Section H - 24m length '"></span></td>
+            <td><span th:text="'70'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,600.00'"></span></td>
+            <td><span th:text="'$ 182,000.00'"></span></td>
+            <td><span th:text="'85%'"></span></td>
+            <td><span th:text="'23'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,600.00'"></span></td>
+            <td><span th:text="'$ 50,830.00'"></span></td>
+            <td><span th:text="'84%'"></span></td>
+            <td><span th:text="'23'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,600.00'"></span></td>
+            <td><span th:text="'$ 50,232.00'"></span></td>
+            <td><span th:text="'Difference in Work done'"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'85%'"></span></td>
+            <td><span th:text="'10'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,600.00'"></span></td>
+            <td><span th:text="'$ 22,100.00'"></span></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'10'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,739.00'"></span></td>
+            <td><span th:text="'$ 21,912.00'"></span></td>
+            <td><span th:text="'Difference in Work done'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'C'"></span></td>
+            <td><span th:text="'Temporary Strutting Works'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Supply labour, materials, tools, equipment and all necessary items for the fabrication, installation of the strutting members including subsequent dismantling works and removal off-site. (Note: All dismantled material belong to the Subcontractor)'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'a'"></span></td>
+            <td><span th:text="'All waler, stuts, tie beams and all other strutting members as shown on drawings'"></span></td>
+            <td><span th:text="'690'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 1,035,500.00'"></span></td>
+            <td><span th:text="'100%'"></span></td>
+            <td><span th:text="'40'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 60,000.00'"></span></td>
+            <td><span th:text="'90%'"></span></td>
+            <td><span th:text="'39.00'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 52,650.00'"></span></td>
+            <td><span th:text="'Difference in work done (Section A, D)'"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'70'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 84,000.00'"></span></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'70.00'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 84,000.00'"></span></td>
+            <td><span th:text="'Difference in work done (Section F)'"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'20'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 24,000.00'"></span></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'20.00'"></span></td>
+            <td><span th:text="'Ton'"></span></td>
+            <td><span th:text="'$ 1,500.00'"></span></td>
+            <td><span th:text="'$ 24,000.00'"></span></td>
+            <td><span th:text="'Difference in work done (Section H)'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'D'"></span></td>
+            <td><span th:text="'Full compliance with Occupational Health and Safety requirements'"></span></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'E'"></span></td>
+            <td><span th:text="'All other works not listed above and described in the specification and drawings but are necessary for the completion of subcontract works.'"></span></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'Item'"></span></td>
+            <td></td>
+            <td><span th:text="'Included'"></span></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+            <td>
+                <span th:text="'TOTAL FOR SUB-CONTRACT WORKS'"></span>
+            </td>
+            <td colspan="4">
+                <span th:text="'$ 1,900,000.00'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 1,142,930.00'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 1,091,114.00'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+</body>
+</html>

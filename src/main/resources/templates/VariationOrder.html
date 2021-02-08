@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: left; ">
+        <span th:text="'KIMLY CONSTRUCTION PTE LTD.'"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'PROJECT NAME' + ${projectName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR' + ${subConName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR Works' + ${subConWork}"></span>
+    </h3>
+</div>
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Payment Response Detail BreakDown'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'S/N'"></span>
+            </td>
+            <td>
+                <span th:text="'Description'"></span>
+            </td>
+            <td colspan="4">
+                <span th:text="'Contract'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'SUB-CON CLAIMED'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'KINLY CERTIFIED'"></span>
+            </td>
+            <td>
+                <span th:text="'Remarks'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+            <td>
+                <span th:text="'% Work Done'"></span>
+            </td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+            <td>
+                <span th:text="'% Work Done'"></span>
+            </td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td><span th:text="'B'"></span></td>
+            <td><span th:text="'Variation WORKS'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Installation of Sheet Piles Along Perimeter Wall'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'a'"></span></td>
+            <td><span th:text="'Rental, supply, delivery and installation of sheet piles (FSP IV) including subsequent extraction using the following methods :'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Installation by Crush Piler; Extraction by Silent Piler'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Section A & B - 18m length '"></span></td>
+            <td></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'Rate Only'"></span></td>
+            <td><span th:text="'100%'"></span></td>
+            <td><span th:text="'100'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'$ 200,000.00'"></span></td>
+            <td><span th:text="'80%'"></span></td>
+            <td><span th:text="'106'"></span></td>
+            <td><span th:text="'no'"></span></td>
+            <td><span th:text="'$ 2,000.00'"></span></td>
+            <td><span th:text="'$ 169,600.00'"></span></td>
+            <td><span th:text="'Difference in Work done'"></span></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <span th:text="'TOTAL FOR VARIATION WORKS'"></span>
+            </td>
+            <td colspan="4">
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 200,000.00'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 169,600.00'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <span th:text="'Grand Total Amount'"></span>
+            </td>
+            <td colspan="4">
+                <span th:text="'$ 1,900,000.00'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 1,342,930.00'"></span>
+            </td>
+            <td colspan="5">
+                <span th:text="'$ 1,260,714.00'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+</body>
+</html>

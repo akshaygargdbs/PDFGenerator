@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: left; ">
+        <span th:text="'Payment Claim' + ${numberClaim}"></span>
+    </h3>
+</div>
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'ADVANCE PAYMENT RECOVERY SCHEDULE'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'PC'"></span>
+            </td>
+            <td>
+                <span th:text="'Month'"></span>
+            </td>
+            <td>
+                <span th:text="'Certification'"></span>
+            </td>
+            <td>
+                <span th:text="'Adv Payment'"></span>
+            </td>
+            <td>
+                <span th:text="'Backcharge'"></span>
+            </td>
+            <td>
+                <span th:text="'Cumulative'"></span>
+            </td>
+        </tr>
+        <tr th:each="payment : ${paymentList}" >
+            <td th:text="${payment.pc}"></td>
+            <td th:text="${payment.month}"></td>
+            <td th:text="${payment.certification}"></td>
+            <td th:text="${payment.advacnePayment}"></td>
+            <td th:text="${payment.backcharge}"></td>
+            <td th:text="${payment.cumulative}"></td>
+        </tr>
+        <tr>
+            <td ></td>
+            <td th:text="'Total Amount'"></td>
+            <td th:text="'$ 1,024,000.00'"></td>
+            <td th:text="'$ 40,000.00'"></td>
+            <td th:text="'$ 220.00'"></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

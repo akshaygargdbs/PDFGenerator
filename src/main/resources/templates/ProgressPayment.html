@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: centre; ">
+        <span th:text="'KIMLY CONSTRUCTION PTE LTD'"></span>
+    </h3>
+    <h4 style="text-align: centre; ">
+       <u><span th:text="'CERTIFICATE OF PROGRESS PAYMENT'"></span></u>
+    </h4>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <td>
+                <table>
+                <tr>
+                    <td><span th:text="'Project : '"></span></td>
+                    <td><span th:text="${projectName}"></span></td>
+                </tr>
+                <tr>
+                    <td><span th:text="'Sub-Contractor : '"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span th:text="'Sub-Contractor Works : '"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span th:text="'Contract Type : '"></span></td>
+                    <td><span th:text="${contractType}"></span></td>
+                </tr>
+
+                </table>
+
+            </td>
+            <td>
+                <table style="border: 1px solid black;">
+                    <tr>
+                        <td>
+                            <span th:text="'Item'"></span>
+                        </td>
+                        <td>
+                            <span th:text="'Applicable (Y/N)'"></span>
+                        </td>
+                        <td>
+                            <span th:text="'Submitted (Y/N)'"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <span th:text="'1. Performance Bond'"></span>
+                        </td>
+                        <td  >
+                            <span th:text="'Y'"></span>
+                        </td>
+                        <td >
+                            <span th:text="'Y'"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span th:text="'2. Letter of Acceptance'"></span>
+                        </td>
+                        <td >
+                            <span th:text="'Y'"></span>
+                        </td>
+                        <td >
+                            <span th:text="'Y'"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span th:text="'3. Warranty'"></span>
+                        </td>
+                        <td >
+                            <span th:text="'Y'"></span>
+                        </td>
+                        <td >
+                            <span th:text="'N'"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'PROGRESS PAYMENT NO'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+            <td>
+                <span th:text="'WORK DONE CERTIFIED UP TO'"></span>
+            </td>
+            <td>
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'ORIGINAL SUB-CONTRACT SUM'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'REMEASURED SUB-CONTRACT SUM'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'VO'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'ADJUSTED CONTRACT SUM'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+
+        <tr></tr>
+        <tr>
+            <td><span th:text="'CUMULATIVE CLAIM RECEIVED'"></span></td>
+            <td></td>
+            <td>
+                <span th:text="'GROSS CLAIM'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'VO'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'DEPOSIT PAYMENT'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'ADVANCE PAYMENT'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span th:text="'TOTAL GROSS CLAIM'"></span>
+            </td>
+            <td >
+                <span th:text="''"></span>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table>
+        <tr>
+            <td></td>
+            <td><span th:text="'From 01 Jul 07 7% GST'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'CUMULATIVE SUB-CONTRACT WORKS CERTIFIED'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'VARIATION ORDER'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'TOTAL AMOUNT CERTIFIED'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'LESS : MAX. 5% RETENTION SUM (10% OF WORKS CERTIFIED CAPPED AT 5% OF THE SUB-CONTRACT SUM)'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'LESS : PREVIOUS CUMULATIVE PAYMENTS'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'AMOUNT CERTIFIED FOR THIS PAYMENT'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'ADD : GST 7%'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'BALANCE DUE FOR THIS PAYMENT INCLUSIVE OF GST'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'ADD : a) Witheld Payment for non-submission of Performance Bond (w/o GST)'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'LESS: b) Deposit Refundable (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'c) Advance Payment Recovery (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td><span th:text="'TOTAL BALANCE DUE FOR THIS PAYMENT INCLUSIVE OF GST'"></span></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Record:'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'Description'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount Retained or Paid'"></span>
+            </td>
+            <td>
+                <span th:text="'PR No. & Date'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount Release or Recovered'"></span>
+            </td>
+            <td>
+                <span th:text="'PR No. & Date'"></span>
+            </td>
+            <td>
+                <span th:text="'Balance to be Released/ Recovered'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'a) Witheld Payment for non-submission of Performance Bond'"></span>
+            </td>
+            <td>
+                <span th:text="'$'"></span>
+            </td>
+            <td >
+                <span th:text="' '"></span>
+            </td>
+            <td >
+                <span th:text="'$'"></span>
+            </td>
+            <td >
+                <span th:text="' '"></span>
+            </td>
+            <td>
+                <span th:text="'$'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'(b) Deposit Refundable (w or w/o GST)*'"></span>
+            </td>
+            <td >
+                <span th:text="'$'"></span>
+            </td>
+            <td>
+                <span th:text="' '"></span>
+            </td>
+            <td >
+                <span th:text="'$'"></span>
+            </td>
+            <td >
+                <span th:text="' '"></span>
+            </td>
+            <td >
+                <span th:text="'$'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'(c) Advance Payment (w or w/o GST)* [NB : To attach the Recovery Schedule if applicable)'"></span>
+            </td>
+            <td>
+                <span th:text="'$'"></span>
+            </td>
+            <td>
+                <span th:text="' '"></span>
+            </td>
+            <td>
+                <span th:text="'$'"></span>
+            </td>
+            <td>
+                <span th:text="' '"></span>
+            </td>
+            <td>
+                <span th:text="'$'"></span>
+            </td>
+        </tr>
+    </table>
+    <i><span th:text="'*delete whichever is applicable'"></span></i>
+</div>
+<div>
+
+    <table >
+        <tr><td><span th:text="'PREPARED BY QS :'"></span></td><td></td><td></td></tr>
+        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
+        <tr><td><span th:text="'REVIEWED BY DIRECTOR :'"></span></td><td><span th:text="${reviewDirector}"></span></td><td></td></tr>
+        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
+        <tr><td><span th:text="'PPROVED BY DIRECTOR :'"></span></td><td><span th:text="${approveDirector}"></span></td><td></td></tr>
+        <tr><td><span th:text="'AMOUNT :'"></span></td><td></td><td></td></tr>
+        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
+    </table>
+
+</div>
+
+<div>
+    <span th:text="'Backcharges to be deducted from the Subcontractors account'"></span>
+    <table>
+        <tr>
+            <td></td>
+            <td><span th:text="'From 01 Jul 07 7% GST'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'CUMULATIVE BACKCHARGES TO-DATE (SEE ATTACHED)'"></span></td>
+            <td ><span th:text="'$    -'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'LESS PREVIOUS DEDUCTIONS'"></span></td>
+            <td ><span th:text="'$    -'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'CURRENT BACKCHARGE AMOUNT'"></span></td>
+            <td ><span th:text="'$    -'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'ADD GST'"></span></td>
+            <td><span th:text="'$    -'"></span></td>
+        </tr>
+        <tr>
+            <td><span th:text="'CURRENT BACKCHARGE AMOUNT (INCLUDING GST)'"></span></td>
+            <td><span th:text="'$    -'"></span></td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+    <h3 style="text-align: left; ">
+        <span th:text="'KIMLY CONSTRUCTION PTE LTD.'"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'PROJECT NAME' + ${projectName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR' + ${subConName}"></span>
+    </h3>
+    <h3 style="text-align: left; ">
+        <span th:text="'SUB-CONTRACTOR Works' + ${subConWork}"></span>
+    </h3>
+</div>
+<div>
+    <table style="border: 1px solid black;">
+        <caption><span th:text="'Payment Response Backcharge'"></span></caption>
+        <tr>
+            <td>
+                <span th:text="'S/N'"></span>
+            </td>
+            <td>
+                <span th:text="'Description'"></span>
+            </td>
+            <td>
+                <span th:text="'Unit'"></span>
+            </td>
+            <td>
+                <span th:text="'Quantity'"></span>
+            </td>
+            <td>
+                <span th:text="'Rate'"></span>
+            </td>
+            <td>
+                <span th:text="'Amount'"></span>
+            </td>
+            <td>
+                <span th:text="'Remarks'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><span th:text="'A'"></span></td>
+            <td><span th:text="'Backcharge for MPI Test'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'Failure of MPI test on 23-Mar-2020'"></span></td>
+            <td><span th:text="'Test'"></span></td>
+            <td><span th:text="'1'"></span></td>
+            <td><span th:text="'200.00'"></span></td>
+            <td><span th:text="'$ 200.00'"></span></td>
+            <td><span th:text="'PC4'"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Total Amount'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'$ 200.00'"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Add 10% Admin Charge'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'$ 20.00'"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Less Previous Backcharge'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'$ 220.00'"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span th:text="'Nett Amount'"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span th:text="'$ 200.00'"></span></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>
