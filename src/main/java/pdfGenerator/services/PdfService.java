@@ -47,35 +47,35 @@ public class PdfService {
     private Context getContext(String pdfType) {
         Context context = new Context();
         if (pdfType.isEmpty() == false && "PaymentResponse".equalsIgnoreCase(pdfType)) {
-            context.setVariable("refNumber", "TEST000001");
+            context.setVariable("refNumber", "11");
             context.setVariable("repDate", "19-Jan-2021");
 
-            context.setVariable("recieverEmail", "");
-            context.setVariable("serviceAdd", "");
-            context.setVariable("tel", "");
-            context.setVariable("fax", "");
-            context.setVariable("email", "test@test.com");
-            context.setVariable("inCharge", "");
+            context.setVariable("recieverEmail", "xxx PTE LTD");
+            context.setVariable("serviceAdd", "28 Riverfront, Singapore XXXXXX");
+            context.setVariable("tel", "1234-xxxx");
+            context.setVariable("fax", "5438-xxxx");
+            context.setVariable("email", "henry@guanchuan.com; winbo@guanchuan.com ");
+            context.setVariable("inCharge", "MR. ABC");
 
             context.setVariable("sender", "KIMLY CONSTRUCTION PTE LTD");
             context.setVariable("serviceAddSender", "No. 3 NEW INDUSTRIAL ROAD #05-01/02 KIMLY BUILDING SINGAPORE 536197");
-            context.setVariable("telSender", "6280 1755");
-            context.setVariable("faxSender", "6280 2755");
-            context.setVariable("emailSender", "test@test.com");
-            context.setVariable("inChargeSender", "");
+            context.setVariable("telSender", "1234-xxxx");
+            context.setVariable("faxSender", "5438-xxxx");
+            context.setVariable("emailSender", "sallytan@kimly.com.sg");
+            context.setVariable("inChargeSender", "Ms. Sally Tan");
 
-            context.setVariable("projectTitle", "PROPOSED NEW ERECTION OF SINGAPORE INSTITUTE OF TECHNOLOGY CAMPUS AT PUNGGOL NORTH (PLOT 2) COMPRISING 1 NO. OF 10-STOREY ADMINISTRATION BLOCK, PART 1/4/6/9-STOREY ACADEMIC BLOCKS, BASEMENT CAR PARK AND OTHER ANCILLARY FACILITIES AND WORKS AT PUNGGOL COAST ROAD AND INCLUDES THE TEMPORARY WORKS AND THE PERMANENT WORKS, AND WHERE THE CONTEXT REQUIRES, A PHASE OR PART OF THE WORKS (THE “WORKS”)");
+            context.setVariable("projectTitle", "PROPOSED NEW ERECTION OF SINGAPORE INSTITUTE OF TECHNOLOGY CAMPUS....");
 
-            context.setVariable("contractIdentificaiton", "");
-            context.setVariable("refClaim", "");
-            context.setVariable("frm", "");
-            context.setVariable("clmIdentify", "");
-            context.setVariable("clmIdentifyNum", "");
-            context.setVariable("clmIdentifyDate", "");
-            context.setVariable("clmIdentifyAmount", "");
+            context.setVariable("contractIdentificaiton", "Supply, Fabricate, Delivery and Installation of xxx");
+            context.setVariable("refClaim", "01-12-2020");
+            context.setVariable("frm", "31-12-2020");
+            context.setVariable("clmIdentify", "11");
+            context.setVariable("clmIdentifyNum", "GCE/PC/KCPL/SITP2/F-241/11/Henry");
+            context.setVariable("clmIdentifyDate", "24-12-2020");
+            context.setVariable("clmIdentifyAmount", "SGD 518,930.00");
         }
         if (pdfType.isEmpty() == false && "ProgressPayment".equalsIgnoreCase(pdfType)) {
-            context.setVariable("projectName", "SINGAPORE INSTITUTE OF TECHNOLOGY -PLOT 2");
+            context.setVariable("projectName", "xxx");
             context.setVariable("contractType", "LUMP SUM / RE-MEASUREMENT");
             context.setVariable("reviewDirector", "Choo Tat Jin");
             context.setVariable("approveDirector", "Khoo Beng Hwee");

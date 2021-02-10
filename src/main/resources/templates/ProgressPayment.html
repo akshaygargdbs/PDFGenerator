@@ -11,248 +11,264 @@
 </div>
 
 <div>
-    <table>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
-            <td>
-                <table>
+            <td style="width: 80%;">
+                <table style="border: 1px solid black;width: 100%;">
                 <tr>
-                    <td><span th:text="'Project : '"></span></td>
-                    <td><span th:text="${projectName}"></span></td>
+                    <td style="width: 30%;"><span th:text="'Project : '"></span></td>
+                    <td style="width: 70%;"><span th:text="${projectName}"></span></td>
                 </tr>
                 <tr>
-                    <td><span th:text="'Sub-Contractor : '"></span></td>
-                    <td></td>
+                    <td style="width: 30%;"><span th:text="'Sub-Contractor : '"></span></td>
+                    <td style="width: 70%;"><span th:text="'xxx PTE LTD'"></span></td>
                 </tr>
                 <tr>
-                    <td><span th:text="'Sub-Contractor Works : '"></span></td>
-                    <td></td>
+                    <td style="width: 30%;"><span th:text="'Sub-Contractor Works : '"></span></td>
+                    <td style="width: 70%;"><span th:text="'Supply, Fabricate, Delivery and Installation of xxx'"></span></td>
                 </tr>
                 <tr>
-                    <td><span th:text="'Contract Type : '"></span></td>
-                    <td><span th:text="${contractType}"></span></td>
+                    <td style="width: 30%;"><span th:text="'Contract Type : '"></span></td>
+                    <td style="width: 70%;"><span th:text="${contractType}"></span></td>
                 </tr>
-
                 </table>
 
             </td>
-            <td>
-                <table style="border: 1px solid black;">
+            <td style="width: 20%;">
+                <table style="font-size:10px; align: right; border: 1px solid black;width: 100%;">
                     <tr>
-                        <td>
+                        <td style="width: 80%;">
                             <span th:text="'Item'"></span>
                         </td>
-                        <td>
+                        <td style="width: 10%;">
                             <span th:text="'Applicable (Y/N)'"></span>
                         </td>
-                        <td>
+                        <td style="width: 10%;">
                             <span th:text="'Submitted (Y/N)'"></span>
                         </td>
 
                     </tr>
                     <tr>
-                        <td>
-                            <span th:text="'1. Performance Bond'"></span>
+                        <td style="width: 80%;">
+                            <span th:text="'1.Performance Bond'"></span>
                         </td>
-                        <td  >
+                        <td style="width: 10%;" >
                             <span th:text="'Y'"></span>
                         </td>
-                        <td >
-                            <span th:text="'Y'"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span th:text="'2. Letter of Acceptance'"></span>
-                        </td>
-                        <td >
-                            <span th:text="'Y'"></span>
-                        </td>
-                        <td >
+                        <td style="width: 10%;">
                             <span th:text="'Y'"></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <span th:text="'3. Warranty'"></span>
+                        <td style="width: 80%;">
+                            <span th:text="'2.Letter of Acceptance'"></span>
                         </td>
-                        <td >
+                        <td style="width: 10%;">
                             <span th:text="'Y'"></span>
                         </td>
-                        <td >
+                        <td style="width: 10%;">
+                            <span th:text="'Y'"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 80%;">
+                            <span th:text="'3.Warranty'"></span>
+                        </td>
+                        <td style="width: 10%;">
+                            <span th:text="'Y'"></span>
+                        </td>
+                        <td style="width: 10%;">
                             <span th:text="'N'"></span>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
+    </table>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
-            <td>
-                <span th:text="'PROGRESS PAYMENT NO'"></span>
+            <td style="width: 25%;">
+                <span th:text="'Progress Payment Number'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 25%;">
+                <span th:text="' 11 '"></span>
             </td>
-            <td>
-                <span th:text="'WORK DONE CERTIFIED UP TO'"></span>
+            <td style="width: 30%;">
+                <span th:text="'Work Done Certified Upto'"></span>
             </td>
-            <td>
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'31-12-2020'"></span>
+            </td>
+        </tr>
+    </table>
+    <table style="border: 1px solid black;width: 100%;">
+        <tr>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Original Sub-Contract Sum'"></span>
+            </td>
+            <td style="width: 20%;">
+                <span th:text="'$ 1,900,000.00'"></span>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'ORIGINAL SUB-CONTRACT SUM'"></span>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Remeasured Sub-Contract Sum'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'REMEASURED SUB-CONTRACT SUM'"></span>
-            </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ -'"></span>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
                 <span th:text="'VO'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ 169,600.00'"></span>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'ADJUSTED CONTRACT SUM'"></span>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Adjusted Contract Sum'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
-            </td>
-        </tr>
-
-        <tr></tr>
-        <tr>
-            <td><span th:text="'CUMULATIVE CLAIM RECEIVED'"></span></td>
-            <td></td>
-            <td>
-                <span th:text="'GROSS CLAIM'"></span>
-            </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ 2,069,600.00'"></span>
             </td>
         </tr>
+    </table>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
-            <td></td>
-            <td></td>
+            <td colspan="2"><span th:text="'CUMULATIVE CLAIM RECEIVED'"></span></td>
             <td>
+                <span th:text="'Gross Claim'"></span>
+            </td>
+            <td >
+                <span th:text="'$ 1,342,930.00'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
                 <span th:text="'VO'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ 200,000.00'"></span>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'DEPOSIT PAYMENT'"></span>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Deposit Payment'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'ADVANCE PAYMENT'"></span>
-            </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ -'"></span>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td>
-                <span th:text="'TOTAL GROSS CLAIM'"></span>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Advance Payment'"></span>
             </td>
-            <td >
-                <span th:text="''"></span>
+            <td style="width: 20%;">
+                <span th:text="'$ -'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"></td>
+            <td style="width: 25%;"></td>
+            <td style="width: 30%;">
+                <span th:text="'Total Gross Claim'"></span>
+            </td>
+            <td style="width: 20%;">
+                <span th:text="'$ 1,542,930,00'"></span>
             </td>
         </tr>
     </table>
 </div>
 <div>
-    <table>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
-            <td></td>
-            <td><span th:text="'From 01 Jul 07 7% GST'"></span></td>
+            <td width="80%"></td>
+            <td width="20%"><span th:text="'From 01 Jul 07'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'CUMULATIVE SUB-CONTRACT WORKS CERTIFIED'"></span></td>
-            <td ></td>
+            <td width="80%"></td>
+            <td width="20%"><span th:text="'7% GST'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'VARIATION ORDER'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'Cummulative Sub-Contract Works Certified'"></span></td>
+            <td width="20%"><span th:text="'$ 1,091,114.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'TOTAL AMOUNT CERTIFIED'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'Variation Order'"></span></td>
+            <td width="20%"><span th:text="'$ 169,600.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'LESS : MAX. 5% RETENTION SUM (10% OF WORKS CERTIFIED CAPPED AT 5% OF THE SUB-CONTRACT SUM)'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'Total Amount Certified'"></span></td>
+            <td width="20%"><span th:text="'$1,260,714.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'LESS : PREVIOUS CUMULATIVE PAYMENTS'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'LESS : MAX. 5% Retention Sum (10% of works certified '"></span></td>
+            <td width="20%"><span th:text="'$ 95,000.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'AMOUNT CERTIFIED FOR THIS PAYMENT'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'       at 5% of the Sub-Contract Sum)'"></span></td>
+            <td width="20%"></td>
         </tr>
         <tr>
-            <td><span th:text="'ADD : GST 7%'"></span></td>
-            <td ></td>
+            <td width="80%"></td>
+            <td width="20%"><span th:text="'$ 1,165,714.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'BALANCE DUE FOR THIS PAYMENT INCLUSIVE OF GST'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'LESS : Previous Cumulative Payments'"></span></td>
+            <td width="20%"><span th:text="'$ 1,024,000.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'ADD : a) Witheld Payment for non-submission of Performance Bond (w/o GST)'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'Amount Certified for this payment'"></span></td>
+            <td width="20%"><span th:text="'$ 141,714.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'LESS: b) Deposit Refundable (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'ADD : GST 7%'"></span></td>
+            <td width="20%"><span th:text="'$ 9,919.98'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'c) Advance Payment Recovery (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
-            <td ></td>
+            <td width="80%"><span th:text="'Balance due for this payment inclusive of GST'"></span></td>
+            <td width="20%"><span th:text="'$ 151,633.98'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'TOTAL BALANCE DUE FOR THIS PAYMENT INCLUSIVE OF GST'"></span></td>
-            <td></td>
+            <td width="80%"><span th:text="'ADD : a) Witheld Payment for non-submission of Performance Bond (w/o GST)'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
+        </tr>
+        <tr>
+            <td width="80%"><span th:text="'      b) Deposit Refundable (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
+        </tr>
+        <tr>
+            <td width="80%"><span th:text="'      c) Advance Payment to recover form current certification (w or w/o GST)* *(delete whichever is applicable)'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
+        </tr>
+        <tr>
+            <td width="80%"><span th:text="'Total Balance due for this payment inclusive of GST'"></span></td>
+            <td width="20%"><span th:text="'$ 141,633.98'"></span></td>
         </tr>
     </table>
 </div>
 
 <div>
-    <table style="border: 1px solid black;">
-        <caption><span th:text="'Record:'"></span></caption>
+    <h4 style="text-align: left; page-break-before: always; ">
+        <span th:text="'Record'"> </span>
+    </h4>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
             <td>
                 <span th:text="'Description'"></span>
@@ -278,19 +294,19 @@
                 <span th:text="'a) Witheld Payment for non-submission of Performance Bond'"></span>
             </td>
             <td>
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
             <td >
-                <span th:text="' '"></span>
+
             </td>
             <td >
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
             <td >
-                <span th:text="' '"></span>
+
             </td>
             <td>
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
         </tr>
         <tr>
@@ -298,19 +314,19 @@
                 <span th:text="'(b) Deposit Refundable (w or w/o GST)*'"></span>
             </td>
             <td >
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
             <td>
-                <span th:text="' '"></span>
+
             </td>
             <td >
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
             <td >
-                <span th:text="' '"></span>
+
             </td>
             <td >
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
             </td>
         </tr>
         <tr>
@@ -318,68 +334,191 @@
                 <span th:text="'(c) Advance Payment (w or w/o GST)* [NB : To attach the Recovery Schedule if applicable)'"></span>
             </td>
             <td>
-                <span th:text="'$'"></span>
+                <span th:text="'$ 40,000.00'"></span>
             </td>
             <td>
-                <span th:text="' '"></span>
+                <span th:text="'PR3A(Apr20)'"></span>
             </td>
             <td>
-                <span th:text="'$'"></span>
+
             </td>
             <td>
-                <span th:text="' '"></span>
+
             </td>
             <td>
-                <span th:text="'$'"></span>
+                <span th:text="'$ -'"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'    -Recover in Sep 2020'"></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <span th:text="'$ 10,000.00'"></span>
+            </td>
+            <td>
+                <span th:text="'RE08'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'    -Recover in Oct 2020'"></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <span th:text="'$ 10,000.00'"></span>
+            </td>
+            <td>
+                <span th:text="'RE09'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'    -Recover in Nov 2020'"></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <span th:text="'$ 10,000.00'"></span>
+            </td>
+            <td>
+                <span th:text="'RE10'"></span>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span th:text="'    -Recover in Dec 2020'"></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <span th:text="'$ 10,000.00'"></span>
+            </td>
+            <td>
+                <span th:text="'RE11'"></span>
+            </td>
+            <td>
             </td>
         </tr>
     </table>
     <i><span th:text="'*delete whichever is applicable'"></span></i>
 </div>
-<div>
-
-    <table >
-        <tr><td><span th:text="'PREPARED BY QS :'"></span></td><td></td><td></td></tr>
-        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
-        <tr><td><span th:text="'REVIEWED BY DIRECTOR :'"></span></td><td><span th:text="${reviewDirector}"></span></td><td></td></tr>
-        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
-        <tr><td><span th:text="'PPROVED BY DIRECTOR :'"></span></td><td><span th:text="${approveDirector}"></span></td><td></td></tr>
-        <tr><td><span th:text="'AMOUNT :'"></span></td><td></td><td></td></tr>
-        <tr><td><span th:text="'DATE :'"></span></td><td></td><td></td></tr>
-    </table>
-
-</div>
-
+<br/>
 <div>
     <span th:text="'Backcharges to be deducted from the Subcontractors account'"></span>
-    <table>
+    <table style="border: 1px solid black;width: 100%;">
         <tr>
-            <td></td>
-            <td><span th:text="'From 01 Jul 07 7% GST'"></span></td>
+            <td width="80%"></td>
+            <td width="20%"><span th:text="'From 01 Jul 07'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'CUMULATIVE BACKCHARGES TO-DATE (SEE ATTACHED)'"></span></td>
-            <td ><span th:text="'$    -'"></span></td>
+            <td width="80%"></td>
+            <td width="20%"><span th:text="'7% GST'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'LESS PREVIOUS DEDUCTIONS'"></span></td>
-            <td ><span th:text="'$    -'"></span></td>
+            <td width="80%"><span th:text="'Cumulative Backcharges To-Date (See Attached)'"></span></td>
+            <td width="20%"><span th:text="'$ 220.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'CURRENT BACKCHARGE AMOUNT'"></span></td>
-            <td ><span th:text="'$    -'"></span></td>
+            <td width="80%"><span th:text="'Less Previous Deductions'"></span></td>
+            <td width="20%"><span th:text="'$ 220.00'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'ADD GST'"></span></td>
-            <td><span th:text="'$    -'"></span></td>
+            <td width="80%"><span th:text="'Current Backcharge Amount'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
         </tr>
         <tr>
-            <td><span th:text="'CURRENT BACKCHARGE AMOUNT (INCLUDING GST)'"></span></td>
-            <td><span th:text="'$    -'"></span></td>
+            <td width="80%"><span th:text="'Add GST'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
+        </tr>
+        <tr>
+            <td width="80%"><span th:text="'Current Backcharge Amount (Including GST)'"></span></td>
+            <td width="20%"><span th:text="'$ -'"></span></td>
         </tr>
     </table>
 
 </div>
+<br/>
+<div>
+    <table style="border: 1px solid black;width: 100%;">
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Description'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Name'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Designation'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Date'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Prepared By'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Sally Tan'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'QS'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'1-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Checked By'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Madelene Cheong'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'SQS'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'2-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Verified By'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Yuan Long Sheng'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'SPM'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'4-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Reviewed By'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="${reviewDirector}"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Director'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'8-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><span th:text="'Approved By'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Roy Khoo'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Director'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'12-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"><span th:text="${approveDirector}"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Executive Director'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'20-01-2021'"></span></td>
+            <td style="border: 1px solid black;"><span th:text="'Signature'"></span></td>
+        </tr>
+    </table>
+
+</div>
+
 
 </body>
 </html>
