@@ -19,7 +19,7 @@
 </div>
 <br/>
 <div>
-    <table style="border: 1px solid black;width: 100%;">
+    <table style="width: 100%;">
         <tr >
             <td colspan="2" style="border: 1px solid black;"><span th:text="'To : ' + ${recieverEmail}"></span></td></tr>
         <tr >
@@ -40,7 +40,7 @@
 </div>
 <br/>
 <div>
-    <table style="border: 1px solid black;width: 100%;">
+    <table style="width: 100%;">
         <tr>
             <td colspan="2" style="border: 1px solid black;"><span th:text="'From : ' + ${sender}"></span></td></tr>
         <tr>
@@ -72,9 +72,9 @@
             </td>
         </tr>
     </table>
-    <table style="border: 1px solid black; width: 100%;">
+    <table style=" border: 1px solid black; width: 100%;">
         <tr>
-            <table style="border: 1px solid black; width: 100%;">
+            <table style="width: 100%;">
             <tr>
                 <td><span th:text="'Contract Identification : '"></span></td>
                 <td><span th:text="'Reference Period of Claim : ' "></span></td>
@@ -113,68 +113,68 @@
 <div>
     <h4 style="text-align: left; ">
         <span th:text="'Payment Response Details'"> </span></h4>
-    <table style="border: 1px solid black;width: 100%;">
+    <table style="width: 100%;">
         <tr>
             <td style="border: 1px solid black;width:40%;">
-                <span th:text="'Description of Item / Variation Reference No.'"></span>
+                <b><span th:text="'Description of Item / Variation Reference No.'"></span></b>
             </td>
             <td style="border: 1px solid black;width:20%;">
-                <span th:text="'Amount Claimed for Item (S$)'"></span>
+                <b><span th:text="'Amount Claimed for Item (S$)'"></span></b>
             </td>
             <td style="border: 1px solid black;width:20%;">
-                <span th:text="'Response Amount for Item (S$)'"></span>
+                <b><span th:text="'Response Amount for Item (S$)'"></span></b>
             </td>
             <td style="border: 1px solid black;width:20%;">
-                <span th:text="'Reason for Difference'"></span>
+                <b><span th:text="'Reason for Difference'"></span></b>
             </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;width:40%;"><span th:text="'A. Sub-Contract Works'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 1,342,930.00'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 1,091,114.00'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 1,342,930.00'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 1,091,114.00'"></span></td>
             <td style="border: 1px solid black;width:20%;"><span th:text="'Difference in work done'"></span></td>
         </tr>
         <tr >
             <td style="border: 1px solid black;width:40%;"><span th:text="'B. Variation Order'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 200,000.00'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 169,600.00'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 200,000.00'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 169,600.00'"></span></td>
             <td style="border: 1px solid black;width:20%;"><span th:text="'Difference in work done'"></span></td>
         </tr>
         <tr >
             <td style="border: 1px solid black;width:40%;"><span th:text="'C. Advance Payment'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'NA'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'NA'"></span></td>
             <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
         </tr>
         <tr >
             <td style="border: 1px solid black;width:40%;"><span th:text="'D. Deposit Payment'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'NA'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'NA'"></span></td>
             <td style="border: 1px solid black;width:20%;"><span th:text="'NA'"></span></td>
         </tr>
         <tr >
-            <td style="border: 1px solid black;width:40%;"><span th:text="'Sub-Total for Response Amount'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 1,542,930.00'"></span></td>
-            <td style="border: 1px solid black;width:20%;"><span th:text="'$ 1,260,714.00'"></span></td>
+            <td style="border: 1px solid black;width:40%;"><b><span th:text="'Sub-Total for Response Amount'"></span></b></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 1,542,930.00'"></span></td>
+            <td style="border: 1px solid black;width:20%;text-align: right;"><span th:text="'$ 1,260,714.00'"></span></td>
             <td style="border: 1px solid black;width:20%;"></td>
         </tr>
     </table>
 </div>
 <div>
-    <table style="border: 1px solid black;width: 100%; page-break-before: always;">
+    <table style="width: 100%; page-break-before: always;">
         <tr>
-            <td colspan="2" style="border: 1px solid black;"><span th:text="'*Description of item for Amount Withheld, if any'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'Amount Withheld (S$)'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'Reason for Withholding'"></span></td>
+            <td colspan="2" style="border: 1px solid black;"><b><span th:text="'*Description of item for Amount Withheld, if any'"></span></b></td>
+            <td style="border: 1px solid black;"><b><span th:text="'Amount Withheld (S$)'"></span></b></td>
+            <td style="border: 1px solid black;"><b><span th:text="'Reason for Withholding'"></span></b></td>
         </tr>
         <tr>
             <td colspan="2" style="border: 1px solid black;"><span th:text="'Retention: 10% capped at 5% of Sub-Contract Sum'"></span></td>
-            <td style="border: 1px solid black;"><span  th:text="'$ 95,000.00'"></span></td>
+            <td style="border: 1px solid black;text-align: right;"><span  th:text="'$ 95,000.00'"></span></td>
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
             <td colspan="2" style="border: 1px solid black;"><span th:text="'Backcharge (refer attached)'"></span></td>
-            <td style="border: 1px solid black;"><span  th:text="'$ 0.00'"></span></td>
+            <td style="border: 1px solid black;text-align: right;"><span  th:text="'$ 0.00'"></span></td>
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
@@ -188,23 +188,23 @@
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
-            <td colspan="2" ><span th:text="'Less : Amount Previously Paid, if any'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'$ 1,024,000.00'"></span></td>
+            <td colspan="2" style="border: 1px solid black;"><span th:text="'Less : Amount Previously Paid, if any'"></span></td>
+            <td style="border: 1px solid black;text-align: right;"><span th:text="'$ 1,024,000.00'"></span></td>
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
             <td colspan="2" style="border: 1px solid black;"><span th:text="'Total Response Amount [Excl GST]'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'$ 141,714.00'"></span></td>
+            <td style="border: 1px solid black;text-align: right;"><span th:text="'$ 141,714.00'"></span></td>
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
             <td colspan="2" style="border: 1px solid black;"><span th:text="'Advance Payment Recovery'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'$ 10,000.00'"></span></td>
+            <td style="border: 1px solid black;text-align: right;"><span th:text="'$ 10,000.00'"></span></td>
             <td style="border: 1px solid black;"><span th:text="'Current 4/4 (last Recovery)'"></span></td>
         </tr>
         <tr>
-            <td colspan="2" style="border: 1px solid black;"><span th:text="'Net Total Amount [Excl GST]'"></span></td>
-            <td style="border: 1px solid black;"><span th:text="'$ 131,714.00'"></span></td>
+            <td colspan="2" style="border: 1px solid black;"><b><span th:text="'Net Total Amount [Excl GST]'"></span></b></td>
+            <td style="border: 1px solid black;text-align: right;"><span th:text="'$ 131,714.00'"></span></td>
             <td style="border: 1px solid black;"></td>
         </tr>
         <tr>
@@ -219,9 +219,6 @@
     </h5>
     <h5>
         <span th:text="'Authorised Signature & ' "></span>
-    </h5>
-    <h5 >
-        <span th:text="'Organization Stamp (if applicable) :'"></span>
     </h5>
     <h5 >
         <span th:text="'Date :  15-01-2021' "></span>

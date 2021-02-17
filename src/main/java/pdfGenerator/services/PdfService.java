@@ -53,7 +53,7 @@ public class PdfService {
             context.setVariable("serviceAdd", "28 Riverfront, Singapore XXXXXX");
             context.setVariable("tel", "1234-xxxx");
             context.setVariable("fax", "5438-xxxx");
-            context.setVariable("email", "henry@guanchuan.com; winbo@guanchuan.com ");
+            context.setVariable("email", "test@test.com ");
             context.setVariable("inCharge", "MR. ABC");
             context.setVariable("sender", "KIMLY CONSTRUCTION PTE LTD");
             context.setVariable("serviceAddSender", "No. 3 NEW INDUSTRIAL ROAD #05-01/02 KIMLY BUILDING SINGAPORE 536197");
