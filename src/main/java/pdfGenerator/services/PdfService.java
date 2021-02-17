@@ -49,23 +49,19 @@ public class PdfService {
         if (pdfType.isEmpty() == false && "PaymentResponse".equalsIgnoreCase(pdfType)) {
             context.setVariable("refNumber", "11");
             context.setVariable("repDate", "19-Jan-2021");
-
             context.setVariable("recieverEmail", "xxx PTE LTD");
             context.setVariable("serviceAdd", "28 Riverfront, Singapore XXXXXX");
             context.setVariable("tel", "1234-xxxx");
             context.setVariable("fax", "5438-xxxx");
             context.setVariable("email", "henry@guanchuan.com; winbo@guanchuan.com ");
             context.setVariable("inCharge", "MR. ABC");
-
             context.setVariable("sender", "KIMLY CONSTRUCTION PTE LTD");
             context.setVariable("serviceAddSender", "No. 3 NEW INDUSTRIAL ROAD #05-01/02 KIMLY BUILDING SINGAPORE 536197");
             context.setVariable("telSender", "1234-xxxx");
             context.setVariable("faxSender", "5438-xxxx");
             context.setVariable("emailSender", "sallytan@kimly.com.sg");
             context.setVariable("inChargeSender", "Ms. Sally Tan");
-
             context.setVariable("projectTitle", "PROPOSED NEW ERECTION OF SINGAPORE INSTITUTE OF TECHNOLOGY CAMPUS....");
-
             context.setVariable("contractIdentificaiton", "Supply, Fabricate, Delivery and Installation of xxx");
             context.setVariable("refClaim", "01-12-2020");
             context.setVariable("frm", "31-12-2020");
